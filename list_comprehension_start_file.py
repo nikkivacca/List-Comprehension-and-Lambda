@@ -7,6 +7,24 @@ put in all kinds of objects in lists.
 The result will be a new list resulting from evaluating the expression in the
 context of the for and if clauses which follow it. 
 
+Concise way to append somethign from one list to another list
+
+1. expression (transformation)
+2.  iteration 
+3. condition
+
+
+list1 = [2,4,8,10,20,30]
+list2 = []
+
+for x in list1:
+    if (x) >= 10 
+        list2.append(x)
+
+VERSUS 
+
+list2= [x for x in list1 if x>=10]
+
 The list comprehension always returns a result list. '''
 
 
