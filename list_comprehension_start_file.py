@@ -89,9 +89,10 @@ print(numbers)
 ## count how many times the word 'the' appears in the text file - 'sometext.txt'
 
 myfile = open('sometext.txt', 'r')
-lines = myfile.splitlines()
-words = lines.split()
-print(words)
+content = myfile.read()
+words = content.split()
+count = len([i for i in words if i.lower() == "the"])
+print(count)
 
 
 
